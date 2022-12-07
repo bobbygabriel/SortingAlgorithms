@@ -1,5 +1,9 @@
 /**
+ * This class will test each sorting algorithm with an input of an array of unique number. 
+ * This class also measure the wall-clock time of each sorting algorithm.
+ * 
  * @author Bobby Gabriel
+ * @version 1.0
  * Algorithms Final Project
  * Algorithms/Fall 2022
  *
@@ -14,7 +18,8 @@ public class Application {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		// Creating the Unique array to be used for the selection sort
+		
+		// Creating the Unique array to be used for the selection sort and shell sort
         CreateUniqueArray c = new CreateUniqueArray();
         int randomArray[] = c.createArray(950, 800);
 
@@ -37,17 +42,18 @@ public class Application {
         // Returns the number of iterations made in selection sort
         s.comparisons(selectionSortedArray);
 
-        // Returns the execution time
+        // Displays the wall-clock time
         System.out.println("Execution time: " + duration + "ms");
 
 
 
 
 
-        // ------------  SHELL SORT ------------
+        // ------------  SHELL SORT -------------
         System.out.println("\nShell Sort");
         ShellSort shell = new ShellSort();
 
+        // Tracking the wall-clock time of the given selection sort
         startTime = System.nanoTime();
         int shellSortedArray[] = shell.sort(randomArray);
         endTime = System.nanoTime();
@@ -56,11 +62,12 @@ public class Application {
         // Prints the sorted array
         //shell.printArray(shellSortedArray);
 
-        // Returns the number of iterations made in selection sort
+        // Returns the number of iterations made in shell sort
         shell.comparisons(shellSortedArray);
 
-        // Returns the execution time
+        // Returns the wall-clock time
         System.out.println("Execution time: " + duration + "ms");
-	}
+        
+	}//end main
 
-}
+}//end class
