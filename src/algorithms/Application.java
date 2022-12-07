@@ -1,12 +1,10 @@
 /**
- * 
- */
-package algorithms;
-
-/**
  * @author Bobby Gabriel
  *
  */
+
+package algorithms;
+
 public class Application {
 
 	/**
@@ -16,7 +14,7 @@ public class Application {
 		// TODO Auto-generated method stub
 		// Creating the Unique array to be used for the selection sort
         CreateUniqueArray c = new CreateUniqueArray();
-        int randomArray[] = c.createArray(800, 700);
+        int randomArray[] = c.createArray(950, 800);
 
 
 

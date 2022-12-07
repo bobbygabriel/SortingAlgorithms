@@ -1,12 +1,9 @@
 /**
- * 
- */
-package algorithms;
-
-/**
  * @author Bobby Gabriel
  *
  */
+package algorithms;
+
 import java.util.Arrays;
 
 public class SelectionSort {
